@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2020",
     "lib": ["dom", "es2020"],
     "jsx": "react-jsx",
     "module": "ES2022",
     "baseUrl": "./",
     "paths": {
       "react": ["https://esm.sh/react@18.2.0"],
-      "react-dom": ["https://esm.sh/react-dom@18.2.0"]
+      "react-dom": ["https://esm.sh/react-dom@18.2.0"],
+      "json-utils": ["./node_modules/json-utils/src/json-utils.ts"],
     },
     "sourceMap": true,
     "outDir": "./public/dist",
@@ -20,8 +21,10 @@
     "noEmitOnError": false,
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "allowJs": true,
   },
   "exclude": [
     "**/*_test.tsx",
+    "public",
   ],
 }
